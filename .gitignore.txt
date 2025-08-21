@@ -1,0 +1,21 @@
+# create or overwrite
+cat > .gitignore << 'EOF'
+# keep big data & db in repo (we'll store via Git LFS below)
+# DO NOT ignore data/ or database/
+
+# python junk
+__pycache__/
+.ipynb_checkpoints/
+
+# virtual envs (recommended to exclude)
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+EOF
